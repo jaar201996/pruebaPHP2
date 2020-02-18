@@ -12,4 +12,4 @@ if (isset($_GET['controller']) ) {
 	require_once('controllers/login.php');		
 }
 
-?>
+?>.
