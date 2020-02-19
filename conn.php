@@ -1,5 +1,14 @@
-<?php 
-	$conn=pg_connect("host=ec2-184-72-236-57.compute-1.amazonaws.com:5432
- dbname=daa6mk2rrn3pcc user=kmazomftxczcsn password=60be9e1b1ab946560ddda8819124271491ffe193f5342277a6a8d58866b0d10b")or die("Cannnot db,please check your connection string");
+<?php
+/*Datos de conexion a la base de datos*/
+$db_host = "35.233.120.251";
+$db_user = "root";
+$db_pass = "";
+$db_name = "test_empleados";
+
+$con = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
+
+if(mysqli_connect_errno()){
+	echo 'No se pudo conectar a la base de datos : '.mysqli_connect_error();
+}
 ?>
 
